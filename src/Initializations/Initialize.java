@@ -8,18 +8,18 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Initialize {
-       private List<Promotions> promotionsList = new ArrayList<>();
-       private List<SKU> skuList = new ArrayList<>();
+       private static List<Promotions> promotionsList = new ArrayList<>();
+       private static List<SKU> skuList = new ArrayList<>();
 
-    public List<Promotions> getPromotionsList() {
+    public static List<Promotions> getPromotionsList() {
         return promotionsList;
     }
 
-    public List<SKU> getSkuList() {
+    public static List<SKU> getSkuList() {
         return skuList;
     }
 
-    public Initialize(){
+    public static void Initialize(){
 
        //promotion strategy 1
        Promotions promotions1 = new Promotions();
@@ -52,8 +52,8 @@ public class Initialize {
        SKU sku = new SKU();
        HashMap<String,Integer> pricelist = new HashMap<>();
        pricelist.put("A",50);
-       pricelist.put("B",20);
-       pricelist.put("C",30);
+       pricelist.put("B",30);
+       pricelist.put("C",20);
        pricelist.put("D",15);
        sku.setPricelist(pricelist);
 
