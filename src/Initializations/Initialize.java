@@ -31,8 +31,8 @@ public class Initialize {
        //promotion strategy 2
        Promotions promotions2 = new Promotions();
        HashMap<String,Integer> promotionEntities2 = new HashMap<>();
-       promotionEntities1.put("B",2);
-       promotions1.setPromotionprice(45);
+       promotionEntities2.put("B",2);
+       promotions2.setPromotionprice(45);
        promotions2.setPromotionEntities(promotionEntities2);
 
        //promotion strategy 3

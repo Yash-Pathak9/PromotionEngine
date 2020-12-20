@@ -10,9 +10,10 @@ public class CalculateOrderValue {
        Initialize.Initialize();
        Business business = new Business();
         HashMap<String,Integer> input = new HashMap<>();
-        input.put("A",5);
+        input.put("A",3);
         input.put("B",5);
         input.put("C",1);
+        input.put("D",1);
         System.out.println(business.getCartValue(input));
     }
 
